@@ -1,34 +1,23 @@
-name: Android CI/APK Build
+name: Build APK
 
-on:
-  push:
-    branches: [ "main" ]  # 当你向 main 分支提交代码时触发
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 使用 GitHub 提供的 Linux 环境
-
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4  # 拉取你的代码
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
+      # 注意：即使使用第三方构建工具，通常也需要先配置 JDK 环境
+      - name: set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-
-    - name: Build with Gradle
-      run: ./gradlew assembleDebug  # 编译生成 Debug 版 APK
-
-    - name: Upload APK
-      uses: actions/upload-artifact@v4  # 将生成的 APK 上传到 GitHub 界面供下载
-      with:
-        name: my-app-debug-apk
-        path: app/build/outputs/apk/debug/app-debug.apk
+      - name: Build Android project
+        uses: vgaidarji/android-github-actions-build@v1.0.1
+        with:
+          # 这里的 args 就是你要执行的 gradle 命令
+          args: "./gradlew assembleDebug"
