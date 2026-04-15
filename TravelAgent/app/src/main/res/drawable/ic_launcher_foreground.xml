@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="#E85D24"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+    
+    <!-- 指南针外圈 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"/>
+    
+    <!-- 指南针内圈 -->
+    <path
+        android:fillColor="#FAECE7"
+        android:pathData="M54,54m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- 指南针指针 - 北 -->
+    <path
+        android:fillColor="#E85D24"
+        android:pathData="M54,26 L60,54 L54,48 L48,54 Z"/>
+    
+    <!-- 指南针指针 - 南 -->
+    <path
+        android:fillColor="#1D9E75"
+        android:pathData="M54,82 L60,54 L54,60 L48,54 Z"/>
+    
+    <!-- 中心点 -->
+    <path
+        android:fillColor="#E85D24"
+        android:pathData="M54,54m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- 方向标记 -->
+    <path
+        android:fillColor="#E85D24"
+        android:pathData="M54,22 L56,18 L54,20 L52,18 Z"/>
+</vector>

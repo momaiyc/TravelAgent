@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#E85D24</color>
+    <!-- Primary -->
+    <color name="primary">#E85D24</color>
+    <color name="primary_light">#FAECE7</color>
+    <color name="on_primary">#FFFFFF</color>
+    
+    <!-- Secondary -->
+    <color name="secondary">#1D9E75</color>
+    <color name="secondary_light">#E1F5EE</color>
+    <color name="on_secondary">#FFFFFF</color>
+    
+    <!-- Tertiary -->
+    <color name="tertiary">#378ADD</color>
+    <color name="tertiary_light">#E6F1FB</color>
+    
+    <!-- Background -->
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="on_surface">#1C1B1F</color>
+    
+    <!-- Agent Colors -->
+    <color name="agent_coordinator">#7F77DD</color>
+    <color name="agent_coordinator_light">#EEEDFE</color>
+    <color name="agent_transport">#378ADD</color>
+    <color name="agent_transport_light">#E6F1FB</color>
+    <color name="agent_hotel">#EF9F27</color>
+    <color name="agent_hotel_light">#FAEEDA</color>
+    <color name="agent_attraction">#1D9E75</color>
+    <color name="agent_attraction_light">#E1F5EE</color>
+    <color name="agent_food">#E85D24</color>
+    <color name="agent_food_light">#FAECE7</color>
+    
+    <!-- Status -->
+    <color name="success">#1D9E75</color>
+    <color name="warning">#EF9F27</color>
+    <color name="error">#E24B4A</color>
+    <color name="info">#378ADD</color>
+</resources>
