@@ -1,8 +1,0 @@
-# 本地配置文件 - 不要提交到版本控制
-# Local properties file - Do not commit to version control
-
-# Android SDK 路径 (Android Studio会自动设置)
-# sdk.dir=/path/to/android/sdk
-
-# Claude API Key (可选 - 如果不配置会使用模拟数据)
-# CLAUDE_API_KEY=your_api_key_here
